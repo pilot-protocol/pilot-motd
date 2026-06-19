@@ -1,5 +1,15 @@
 # pilot-motd
 
+> ## ⚠️ Deprecated — MOTD moved to [`pilot-changelog`](https://github.com/TeoSlayer/pilot-changelog)
+>
+> The message-of-the-day banner now rides the changelog's render pipeline as
+> the `scope: motd` feed. Publish/clear banners there with
+> `scripts/set-motd.sh` / `scripts/clear-motd.sh`; the daemon polls
+> `https://raw.githubusercontent.com/TeoSlayer/pilot-changelog/main/feed-motd.json`.
+> This repo is retained only for historical reference and is no longer the
+> source `pilot-daemon` reads (as of the daemon release that flips the default
+> feed URL). See `SCHEMA.md` in pilot-changelog.
+
 Source of truth for the Pilot Protocol **message of the day (MOTD)** — a short
 notice shown ahead of every `pilotctl` command for one UTC calendar day at a
 time. Used for network-wide announcements: maintenance windows, incident
